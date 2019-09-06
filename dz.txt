@@ -1,0 +1,11 @@
+clone
+add
+commit
+push origin master
+pull
+fetch
+
+git reset --hard 8559106
+HEAD is now at 8559106 background color for first-span in main.css file
+PS D:\stc> git push --force
+push origin master
