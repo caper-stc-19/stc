@@ -1,0 +1,136 @@
+
+
+body {
+    max-width: 1355px;
+    margin: auto;
+}
+
+.header {    
+    background-image: url('/images/top_bg.jpg');
+    background-image: no-repeat;
+    color: white;
+    height: 760px;
+}
+
+.header img {
+    position: absolute;
+    margin-left: 155px;
+    padding-top: 53px;
+    display: inline-block;
+}
+
+.nav {
+    margin-left: 500px;
+    margin-top: 70px;
+    display: inline-block;
+}
+.nav a, a:visited, a:active, a:hover {
+    margin-right: 44px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav a {
+    text-decoration-color: white;
+}
+
+.call_to_action {
+    width: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.call_to_action {
+    margin-top: 270px;
+    text-align: center;
+    font-size: 40px;    
+}
+
+.greeting {
+    text-decoration-color: black;
+    padding-left: 10px;
+    width: 500px;
+    min-height: 300px;
+    margin-top: -200px;
+    margin-left: 680px;
+    box-shadow: 0 0 2px;
+    background: white;
+}
+
+.greeting h3 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.greeting p {
+    font-size: 13px;
+}
+
+.advantage {
+    margin-top: -100px;
+}
+
+.advantage h3 {
+    text-align: left;
+    margin-left: 250px;
+    font-size: 40px;
+
+}
+
+.advantage_column {
+    display: inline-block;
+    width: 350px;
+    text-align: center;
+    margin-left: 50px;
+}
+
+.advantage_column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event_table h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.event_table table {
+    width: 1030px;
+    margin: auto;
+    color: white;
+    border-spacing: 0;
+}
+
+.event_table th {
+    background: #a3cc40;
+    font-size: 28px;
+}
+
+.event_table th:nth-last-of-type(even) {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color:  #373737;
+}
+
+tr:nth-child(odd) {
+    background-color:  #4b4d4f;
+}
+
+td {
+    font-size: 18px;
+}
+td:nth-last-of-type(odd) {
+    text-align: center;
+}
+
+
+  
