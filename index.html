@@ -16,13 +16,15 @@
         <a href="http://university.innopolis.ru" target="_blank" title="Университет Иннополис" alt="Университет Иннополис">
             <img src="images/logo.png" alt="Логотип кинотеатра Иннополис" title="Логотип кинотеатра Иннополис" />
         </a>
-        <section class="nav">       
-            <a href="#">ЗАКАЗАТЬ БИЛЕТ</a>
-            <a href="#">ПРЕИМУЩЕСТВА</a>
-            <a href="#">ФИЛЬМЫ</a>
-            <a href="#">КОНТАКТЫ</a>     
-            <span id="geo">
-                Ваш город: <span id="city">Москва</span>
+        <section class="nav">
+            <ul role="menu">
+                <li role="menuitem"><a href="#">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                <li role="menuitem"><a href="#">ПРЕИМУЩЕСТВА</a></li>
+                <li role="menuitem"><a href="#">ФИЛЬМЫ</a></li>
+                <li role="menuitem"><a href="#">КОНТАКТЫ</a></li>
+            </ul>
+            <span id="geo" role="region">
+                Ваш город: <span role="" id="city">Москва</span>
             </span>
         </section>
     
@@ -63,60 +65,64 @@
     <div class="event_table">
         <h2>Выберите фильм</h2>
         <table>
-            <tr>
-                <th>Time</th>
-                <th>Stuff that will happen</th>
-                <th></th>
-            </tr>
-            <tr>
-                <td>10am - 12pm</td>
-                <td>Introduction and presentations about Envato</td>
-                <td><svg 
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="33px" height="33px">
-                   <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                    d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
-                   </svg>
-                </td>
-            </tr>
-            <tr>
-                <td>12pm - 02pm</td>
-                <td>Sessions by honorable guests and Speakers</td>
-                <td><svg 
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="33px" height="33px">
-                   <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                    d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
-                   </svg></td>
-            </tr>
-            <tr>
-                <td>02pm - 03pm</td>
-                <td>Break and Mingle time with the authors</td>
-                <td><svg 
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="33px" height="33px">
-                   <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                    d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
-                   </svg>
-                </td>
-            </tr>
-            <tr>
-                <td>03pm - 05pm</td>
-                <td>Portfolio Review, Rewards and Ending Presentation</td>
-                <td>
-                    <svg 
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    width="33px" height="33px">
-                   <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
-                    d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
-                   </svg>
-                </td>
-            </tr>
-        </table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Stuff that will happen</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10am - 12pm</td>
+                    <td>Introduction and presentations about Envato</td>
+                    <td><svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="33px" height="33px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                        d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
+                    </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12pm - 02pm</td>
+                    <td>Sessions by honorable guests and Speakers</td>
+                    <td><svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="33px" height="33px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                        d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
+                    </svg></td>
+                </tr>
+                <tr>
+                    <td>02pm - 03pm</td>
+                    <td>Break and Mingle time with the authors</td>
+                    <td><svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="33px" height="33px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                        d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
+                    </svg>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03pm - 05pm</td>
+                    <td>Portfolio Review, Rewards and Ending Presentation</td>
+                    <td>
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="33px" height="33px">
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                        d="M16.505,32.994 C7.393,32.994 0.005,25.606 0.005,16.494 C0.005,7.381 7.393,-0.006 16.505,-0.006 C25.618,-0.006 33.005,7.381 33.005,16.494 C33.005,25.606 25.618,32.994 16.505,32.994 ZM24.214,14.591 L18.356,14.631 L18.356,8.796 L13.958,8.778 L13.958,14.637 L8.083,14.637 L8.083,19.074 L13.958,19.074 L13.958,24.889 L18.336,24.889 L18.307,19.074 L24.231,19.074 L24.214,14.591 Z"/>
+                    </svg>
+                    </td>
+                </tr>
+            </tbody>
+        </table> 
         <p>Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)</p>
     </div>
     <div class="gifts">
@@ -282,6 +288,30 @@
             </span>
         </div>    
         <p>Hope we see you at the event!<br>All Rights Reserved. Envato Bangladesh © 2015</p>
-    </div>    
+    </div>
+    <div class="form">
+        <form action="/order.php" method="get" id="order_form">
+            Имя: <input type="text" name="name" placeholder="Ваше имя" pattern="^[А-Яа-яЁё\s]+$" title="Только кириллица" required><br>
+            email <input type="email" name="email" placeholder="Ваш email" required><br>
+            Город: <select name="place" required>
+                       <option value="Moscow">Москва</option>
+                       <option value="Rostov">Ростов</option>
+                       <option value="Krasnodar">Краснодар</option>
+                       <option value="Sochi">Сочи</option>
+                       <option value="Vladivostok">Владивосток</option>
+                       <option value="Astrahan">Астрахань</option>
+                       <option value="Anapa">Анапа</option>
+                       <option value="Voronezh">Воронеж</option>
+                       <option value="Innopolis">Иннополис</option>
+                       <option value="Other">Другой город</option>
+                    </select><br>
+            <textarea rows="3" cols="100">Комментарий:</textarea><br>
+            <input type = "checkbox" name="152-FZ" value="yes" required>
+            Настоящим я даю согласие на обработку персональных данных, в соответствии с требованиями статьи 9 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных».<br><br>
+            <input type="file" name="file"><br><br>
+            <!--<input type="submit" value="Заказать">-->            
+        </form>
+        <button type="submit" form="order_form">Заказать</button>
+    </div>
 </body>
 </html>
