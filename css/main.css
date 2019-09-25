@@ -5,30 +5,28 @@ body {
     margin: auto;
 }
 
-.header {    
+.head {    
     background-image: url('/images/top_bg.jpg');
     background-image: no-repeat;
     color: white;
     height: 760px;
 }
 
-.header img {
+.head img {
     position: absolute;
     margin-left: 155px;
     padding-top: 53px;
-    display: inline-block;
 }
 
 .nav {
-    margin-left: 500px;
-    margin-top: 70px;
-    display: inline-block;
+    padding-left: 500px;
+    padding-top: 70px;
+
 }
 .nav a, a:visited, a:active, a:hover {
     margin-right: 44px;
     cursor: pointer;
     text-decoration: none;
-    text-transform: uppercase;
     color: white;
 }
 
@@ -87,6 +85,7 @@ h1 {
     display: inline-block;
     width: 350px;
     text-align: center;
+    vertical-align: top;
     margin-left: 50px;
 }
 
@@ -117,20 +116,99 @@ h1 {
     text-align: left;
 }
 
-tr:nth-child(even) {
+.event_table  tr:nth-child(even) {
     background-color:  #373737;
 }
 
-tr:nth-child(odd) {
+.event_table tr:nth-child(odd) {
     background-color:  #4b4d4f;
 }
 
-td {
+.event_table td {
     font-size: 18px;
 }
-td:nth-last-of-type(odd) {
+
+.event_table td:nth-last-of-type(odd) {
     text-align: center;
 }
 
+.event_table p {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    margin-left: 265px;
+    margin-right: 250px;
+    text-align: center;
+}
 
-  
+.gifts {    
+    background-image: url('/images/b4_bg.jpg');
+    background-image: no-repeat;
+    color: white;
+    height: 760px;
+    text-align: right;
+    
+}
+
+
+.gifts_img_wrapper {
+    position: absolute;
+}
+
+.gifts_img_wrapper img {
+    border-radius: 600px;
+    box-shadow: 5px 5px 5px black;
+    margin-left: 148px;
+    margin-top: 18px;
+    position: relative;
+}
+
+.gifts_text_wrapper {
+    display: inline-block;
+    height: 800px;
+    margin-right: 155px;
+}
+.gifts h3 {
+    padding-top: 200px;
+    font-size: 40px;    
+}
+
+.gifts p {
+    padding-bottom: 5px;
+    width: 800px;
+}
+
+.gifts_text_wrapper span {
+    background-color: #90d23d;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.movie_list_wrapper {
+    width: 950px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.movie_list a, a:visited a:active {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #90d23d;
+    color: white;
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+    height: 200px;
+}
+
+.footer_social {
+    padding-top: 50px;
+}
