@@ -248,17 +248,18 @@ body {
 
 .call_to_action {
     font-size: 80px;
-    font-weight: 100;
-    text-align: center;
+    font-weight: 100;    
 }
 
 .call_to_action__title {
+    padding-left: 100px;
     padding-bottom: 5px;
 }
 
 .call_to_action__text {
     font-size: 50px;
     font-weight: 400;
+    padding-left: 185px;
     margin-bottom: 230px;
 }
 
@@ -267,18 +268,18 @@ body {
     padding-left: 10px;
     width: 505px;
     min-height: 267px;
-    margin-top: -170px;
-    margin-left: 682px;
+    margin-left: 520px;
     box-shadow: 0 0 2px;
     background: white;
+    color: black;
 }
 
 .greeting__title {
     font-weight: bold;
     font-size: 40px;
-    padding-top: 30px;
+    padding-top: 40px;
     padding-left: 21px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .greeting__text {
@@ -287,19 +288,20 @@ body {
     padding-top: 0px;
     padding-left: 22px;
     padding-right: 70px;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
 }
 
 .advantage {
-    margin-top: -115px;
+    margin-top: -60px;
+    margin-left: -150px;
+    margin-bottom: 120px;
 }
 
 .advantage__head_title {
     text-align: left;
     margin-left: 166px;
     font-size: 38pt;
-    font-weight: 700;
-
+    font-weight: 700;margin-bottom: 135px;
 }
 
 .advantage__title {
@@ -313,17 +315,16 @@ body {
 .advantage__column_wrapper {
     display: flex;
     align-items: baseline;
-    margin-top: 120px;
     margin-left: 100px;
     margin-right: auto;
-    
 }
 
 .advantage__column {
-    width: 305px;
-    padding-left: 65px;
+    min-width: 350px;
+    padding-left: 70px;
     text-align: center;
-    font-size: 14px;
+    font-size: 14px;   
+    flex: 1;
 }
 
 .advantage__column_img {
@@ -339,9 +340,6 @@ body {
     font-size: 25pt;
     margin-right: auto;
     margin-left: auto; 
-    width: 1030px;
-    margin-top: 65px;
-    margin-bottom: 135px;
 }
 
 .event-table__head {
@@ -363,7 +361,7 @@ body {
 
 .event-table__head .event-table__cell:last-of-type {
     text-align: left;
-    width: 350px;
+    width: 550px;
     height: 45px;
     padding-left: 100px;
     font-weight: 700;
@@ -406,6 +404,7 @@ body {
     border-radius: 0 0 15px 15px;
     height: 15px;
     margin-top: -5px;
+    margin-bottom: 50px;
 }
 
 .event-table__cell-more {
@@ -421,47 +420,48 @@ body {
     font-size: 14px;
     text-align: center;
     width: 840px;
-    padding-top: 30px;
     font-weight: light;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 130px;
 }
 
 .gift {    
     background-image: url('/images/b4_bg.png');
     background-repeat: no-repeat;
+    background-position: center;
     color: white;
-    height: 760px;
     text-align: right;  
-    margin-bottom: 22px;  
+    margin-bottom: 22px;
+    padding-bottom: 240px;
+    background-size: cover;
 }
 
 .gift__img_wrapper {
     position: absolute;
 }
 
-.gift__img {
+.gift__img_wrapper__img {
     border-radius: 100%;
     box-shadow: 10px 10px 10px black;
-    margin-left: 185px;
+    margin-left: 20px;
     margin-top: -50px;
     position: relative;
 }
 
 .gift__text {
     display: inline-block;
-    height: 400px;
-    margin-right: 160px;
 }
 
 .gift__title {
-    padding-top: 85px;
-    font-size: 50px;    
+    padding-top: 155px;
+    margin-bottom: 55px;
+    font-size: 50px;
 }
 
 .gift__p {
-    padding-bottom: 10px;
-    width: 600px;
+    padding-bottom: 20px;
+    padding-left: 350px;
     font-weight: 100;
     font-size: 14px;
 }
@@ -477,11 +477,6 @@ body {
     font-size: 18px;
 }
 
-.movie_list_wrapper {
-    width: 1030px;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 .movie_list__row {
     padding-left: auto;
@@ -495,7 +490,7 @@ body {
     position: relative;
     overflow: hidden;
     margin-bottom: 35px;
-    width: 280px;
+    width: 340px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -526,21 +521,22 @@ body {
 .movie_list__movie_title:hover {
     font-size: 35px;
     font-weight: 600;
+    color: white;
     text-decoration: none;
 }
 
 .movie_list__head_title {
     font-size: 50px;
-    margin-top: 0px;
     padding-left: 30px;
-    margin-bottom: 34px;
+    margin-bottom: 40px;
 }
 
 .movie_list .movie_list__head_text {
     font-size: 14px;
     font-weight: 400;
     padding-left: 30px;
-    margin-bottom: 78px;    
+    padding-right: 340px;
+    margin-bottom: 80px;    
 }
 
 .movie_list__movie_description_hr {
@@ -562,7 +558,9 @@ body {
 
 .map {
     display: inline-block;
-    padding-top: 60px;
+    padding-left: 250px;
+    padding-top: 70px;
+    margin-bottom: 10px;
 }
 
 .footer {
@@ -572,6 +570,7 @@ body {
     font-weight: lighter;
     text-align: center;
     height: 220px;
+
 }
 
 .footer_social {
