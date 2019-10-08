@@ -219,16 +219,18 @@ header:after {
 }
 
 .header-nav {
+    float: right;   
     margin-bottom: 163px;
 }
 
 .header-nav__logo {
-    display: inline-block;
+   float: left;
+   margin-right: 120px;
 }
 
 nav {
-    display: inline-block;
-    padding: 0 0 0 110px;
+    float: left;
+    padding-top: 15px;
 }
 
 .menu__list {
@@ -238,13 +240,13 @@ nav {
 }
 
 .menu__list__item {
-    display: inline-block;
+    float: left;
 }
 
 .nav__link,
 .nav__link:visited,
 .nav__link:active {
-    padding-right: 30px;
+    margin-right: 40px;
     cursor: pointer;
     text-decoration: none;
     color: white;
@@ -253,10 +255,12 @@ nav {
 
 .nav__link:hover {
     color: #90d23d;
+    border-bottom: 1px solid #90d23d;
 }
 
 .header-nav__geo {
-    display: inline-block;
+    float: right;
+    padding-top: 15px;
 }
 
 .call-to-action {
@@ -307,14 +311,15 @@ nav {
 
 .advantage {
     margin: -75px 0 128px;
+    width: 100%;
     position: relative;
-    z-index: 90;
+    z-index: 90;    
 }
 
 .advantage__head-title {
     font-size: 50px;
     font-weight: 700;
-    margin-bottom: 125px;
+    padding-bottom: 125px;
 }
 
 .advantage__title {
@@ -326,12 +331,11 @@ nav {
 .advantage__row {
     text-align: center;    
     font-size: 0;
-    display: inline-block;
-    vertical-align: top;    
+    float: left;
 }
 
 .advantage__column {
-    display: inline-block;
+    float: left;
     max-width: 300px;
     font-size: 14px;    
 }
@@ -407,7 +411,8 @@ nav {
 .event-table__cell {
     display: table-cell;
     padding-top: 25px;
-    padding-bottom: 20px;    
+    padding-bottom: 20px;
+    padding: 25px 0 20px;
     width: 350px;
     color: white;
 }
@@ -428,8 +433,7 @@ nav {
     background: #4b4d4f;
     border-radius: 0 0 15px 15px;
     height: 15px;
-    margin-top: -5px;
-    margin-bottom: 30px;
+    margin: -5px 0 30px;
 }
 
 .event-table__cell-more {
@@ -446,9 +450,7 @@ nav {
     text-align: center;
     width: 840px;
     font-weight: light;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 100px;
+    margin: 0 auto 100px;
 }
 
 .gift {    
@@ -543,11 +545,13 @@ nav {
 }
 
 .movie-list__row {
-    align-content: center;
+    display: block;
     text-decoration: none;
     color: white;
-    overflow: hidden;
-    margin-bottom: 42px;
+}
+
+.spacer {
+    height: 42px;
 }
 
 .movie-list__movie {
@@ -555,13 +559,12 @@ nav {
     overflow: hidden;
     position: relative;
     width: 340px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 0 30px;
 }
 
 .movie__description {
     position: absolute;
-    background-color: rgba(153,204,51,.8);
+    background-color: rgba(153, 204, 50, 0.8);
     right: 12px;
     left: 30px;
     height: 100%;
@@ -589,17 +592,20 @@ nav {
     margin-bottom: 10px;
 }
 
+.movie-list__th {
+    text-align: left;
+    padding-left: 30px;
+}
+
 .movie-list__head-title {
     font-size: 50px;
-    padding-left: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 }
 
 .movie-list__head-text {
     font-size: 14px;
     font-weight: 400;
-    padding-left: 30px;
-    padding-right: 320px;
+    padding: 0 320px 0 0;
     margin-bottom: 80px;    
 }
 
@@ -618,6 +624,16 @@ nav {
 
 .movie__social {
     padding: 0 0 30px 20px;
+}
+
+.movie__social__link {
+    display: inline-block;
+    border-radius: 100%;
+    box-shadow: 0 1px 10px 1px #56721dcc;
+}
+
+.movie__social__link:hover {
+    box-shadow: 0 0 0 0 #56721dcc;
 }
 
 .map {
@@ -652,7 +668,17 @@ footer {
 }
 
 .footer__social__link {
-    text-decoration: none;
-    margin-left: 4px;
-    margin-right: 4px;       
+    display: inline-block;
+    border-radius: 100%;
+    box-shadow: 1px 0 10px 3px #7bb634;
+}
+
+.footer__social__link:hover {
+    box-shadow: 0 0 0 0 #90d23d;
+}
+
+.clearfix:after {
+    content: " ";
+    clear: both;
+    display: table;
 }

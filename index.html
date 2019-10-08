@@ -49,7 +49,7 @@
         </div>
     </header>
 
-    <div class="advantage">
+    <div class="advantage clearfix">
         <div class="content">
             <h3 class="advantage__head-title">Почему мы?</h3>
             <div class="advantage__row">
@@ -143,12 +143,16 @@
         </div>
     </div>
 
-    <div class="movie-list">
-        <div class="content">
-            <h2 class="movie-list__head-title">Фильмы</h2>
-            <p class="movie-list__head-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipiscialias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esseex inventore repudiandae, suscipit!</p>
-            <div class="movie-list__row">
-                <div class="movie-list__movie">
+    <div class="content">
+        <table class="movie-list">
+            <tr>
+                <th class="movie-list__th">
+                    <h2 class="movie-list__head-title">Фильмы</h2>
+                    <p class="movie-list__head-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipiscialias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esseex inventore repudiandae, suscipit!</p>
+                </th>
+            </tr>
+            <tr class="movie-list__row">
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov1.jpg" alt="Человек-паук" />
                     </div>
@@ -157,22 +161,22 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="movie-list__movie">
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
                     </div>
@@ -181,22 +185,22 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="movie-list__movie">
+                </td>
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
                     </div>
@@ -205,24 +209,25 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="movie-list__row">
-                <div class="movie-list__movie">
+                </td>
+            </tr>
+            <tr class="spacer"></tr>
+            <tr class="movie-list__row">
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov1.jpg" alt="Человек-паук" />
                     </div>
@@ -231,22 +236,22 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="movie-list__movie">
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
                     </div>
@@ -255,22 +260,22 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="movie-list__movie">
+                </td>
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
                     </div>
@@ -279,24 +284,25 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="movie-list__row">
-                <div class="movie-list__movie">
+                </td>
+            </tr>
+            <tr class="spacer"></tr>
+            <tr class="movie-list__row">
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov1.jpg" alt="Человек-паук" />
                     </div>
@@ -305,22 +311,22 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="movie-list__movie">
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
                     </div>
@@ -329,22 +335,22 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="movie-list__movie">
+                </td>
+                <td class="movie-list__movie">
                     <div class="movie__poster">
                         <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
                     </div>
@@ -353,23 +359,23 @@
                         <p class="movie__hr"></p>
                         <p class="movie__text">Lorem ipsum dolor sit amet, consectetur</p>
                         <div class="movie__social">
-                            <a href="http://twitter.com" title="twitter" target="_blank">
+                            <a class="movie__social__link" href="http://twitter.com" title="twitter" target="_blank">
                                 <img src="images/twitter.svg" alt="twitter" />
                             </a>
-                            <a href="http://fb.com" title="facebook" target="_blank">
+                            <a class="movie__social__link" href="http://fb.com" title="facebook" target="_blank">
                                 <img src="images/facebook.svg" alt="facebook" />
                             </a>
-                            <a href="http://dribble.com" title="dribble" target="_blank">
+                            <a class="movie__social__link" href="http://dribble.com" title="dribble" target="_blank">
                                 <img src="images/dribbble.svg" alt="dribbble" />
                             </a>
-                            <a href="http://behance.com" title="behance" target="_blank">
+                            <a class="movie__social__link" href="http://behance.com" title="behance" target="_blank">
                                 <img src="images/behance.svg" alt="behance" />
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <div class="map"></div>
