@@ -233,19 +233,19 @@ nav {
     padding-top: 15px;
 }
 
-.menu__list {
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.menu__list__item {
+.menu__item {
     float: left;
 }
 
-.nav__link,
-.nav__link:visited,
-.nav__link:active {
+.menu__link,
+.menu__link:visited,
+.menu__link:active {
     margin-right: 40px;
     cursor: pointer;
     text-decoration: none;
@@ -253,7 +253,7 @@ nav {
     font-weight: 100;
 }
 
-.nav__link:hover {
+.menu__link:hover {
     color: #90d23d;
     border-bottom: 1px solid #90d23d;
 }
@@ -356,6 +356,11 @@ nav {
     left: 0;
     bottom: 0;
     margin: auto;
+}
+
+.advantage__image:hover {
+    transform: scale(1.07);
+    transition: .2s;
 }
 
 .advantage__column:nth-child(2n) >
@@ -554,7 +559,7 @@ nav {
     height: 42px;
 }
 
-.movie-list__movie {
+.movie-list__cell {
     float: left;    
     overflow: hidden;
     position: relative;
@@ -562,7 +567,7 @@ nav {
     padding: 0 30px;
 }
 
-.movie__description {
+.movie-list__description {
     position: absolute;
     background-color: rgba(153, 204, 50, 0.8);
     right: 12px;
@@ -577,14 +582,14 @@ nav {
     flex-direction: column;
 }
 
-.movie-list__movie:hover .movie__description {
+.movie-list__cell:hover .movie-list__description {
     bottom: 0;
 }
 
-.movie__title,
-.movie__title:visited,
-.movie__title:active,
-.movie__title:hover {
+.movie-list__title,
+.movie-list__title:visited,
+.movie-list__title:active,
+.movie-list__title:hover {
     font-size: 35px;
     font-weight: 600;
     color: white;
@@ -609,7 +614,7 @@ nav {
     margin-bottom: 80px;    
 }
 
-.movie__hr {
+.movie-list__hr {
     width: 80px;
     height: 6px;
     border: 0;
@@ -617,22 +622,22 @@ nav {
     margin-bottom: 10px;
 }
 
-.movie__text {
+.movie-list__text {
     font-size: 18px;
     flex: 1;
 }
 
-.movie__social {
+.movie-list__social {
     padding: 0 0 30px 20px;
 }
 
-.movie__social__link {
+.movie-list__social-link {
     display: inline-block;
     border-radius: 100%;
     box-shadow: 0 1px 10px 1px #56721dcc;
 }
 
-.movie__social__link:hover {
+.movie-list__social-link:hover {
     box-shadow: 0 0 0 0 #56721dcc;
 }
 
@@ -667,13 +672,13 @@ footer {
     margin-bottom: 27px;
 }
 
-.footer__social__link {
+.footer__social-link {
     display: inline-block;
     border-radius: 100%;
     box-shadow: 1px 0 10px 3px #7bb634;
 }
 
-.footer__social__link:hover {
+.footer__social-link:hover {
     box-shadow: 0 0 0 0 #90d23d;
 }
 
