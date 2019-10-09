@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex demo</title>
+    <style  type="text/css">
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .flex-column-reverse {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .flex-row-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .flex-justify-left {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .flex-justify-right {
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .item {            
+            background-color: gainsboro;
+            padding: 30px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        .column {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Преимущества использования верстки, с использованием flex блоков</h1>
+    <h2>Разные направления главной оси (flex-direction)</h2>
+    <h3>Контейнеры в колонку</h3>
+    <div class="flex-column">
+        <div class="item">test 1</div>
+        <div class="item">test 2</div>
+        <div class="item">test 3</div>
+        <div class="item">test 4</div>
+    </div>
+    <h3>В строку:</h3>
+    <div class="flex-row">
+        <div class="item">test 1</div>
+        <div class="item">test 2</div>
+        <div class="item">test 3</div>
+        <div class="item">test 4</div>
+    </div>
+    <h3>Контейнеры в колонку (обратный порядок)</h3>
+    <div class="flex-column-reverse">
+        <div class="item">test 1</div>
+        <div class="item">test 2</div>
+        <div class="item">test 3</div>
+        <div class="item">test 4</div>
+    </div>
+    <h3>В строку (обратный порядок):</h3>
+    <div class="flex-row-reverse">
+        <div class="item">test 1</div>
+        <div class="item">test 2</div>
+        <div class="item">test 3</div>
+        <div class="item">test 4</div>
+    </div>
+    <h3>Горизонтальное центрированиев слева:</h3>
+    <div class="flex-justify-left">
+        <div class="item">test 1</div>
+        <div class="item">test 2</div>
+        <div class="item">test 3</div>
+        <div class="item">test 4</div>
+    </div>
+    <h3>Горизонтальное центрирование справа:</h3>
+    <div class="flex-justify-right">
+        <div class="item">test 1</div>
+        <div class="item">test 2</div>
+        <div class="item">test 3</div>
+        <div class="item">test 4</div>
+    </div>
+    <h3>Колонки одинаковой высоты</h3>
+    <div class="flex-row">
+        <div class="item column">test 1</div>
+        <div class="item column">test 2</div>
+    </div>
+</body>
+</html>
