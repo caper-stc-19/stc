@@ -535,11 +535,16 @@ nav {
     margin-bottom: 95px;
 }
 
+
 .movie-list__row {
-    display: flex;
     text-decoration: none;
     color: white;
     margin-bottom: 40px;
+    display: grid;    
+    grid-template-areas:
+    "movie-list__cell movie-list__cell movie-list__cell"
+    "movie-list__cell movie-list__cell movie-list__cell"
+    "movie-list__cell movie-list__cell movie-list__cell";
 }
 
 .movie-list__cell {

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>flex demo двухколоночный макет на flex с шапкой и подвалом</title>
+    <title>GRID demo двухколоночный макет на grid с шапкой и подвалом</title>
 
     <style>
+
     html,
     body {
         height: 100%;
@@ -14,59 +15,68 @@
         padding: 0;
     }
 
-    .flex-container {
-        display: flex;
-        flex-direction: column;
+    .grid-container {
+        display: grid;
         min-height: 100%;
+        width: 100%;
+        text-align: center;
+        grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer";
+        grid-template-rows: 160px 1fr 70px;
+        grid-template-columns: 20% 1fr 15%;
     }
     
-    header {
+    header {        
         background-color: antiquewhite;
-        text-align: center;
-        height: 160px;
+        grid-area: header;
     }
 
     main {
-        display: flex;
-        width: 74%;
-        height: 100%;
-        background-color: antiquewhite;
-        justify-content: center;
-        align-self: center;
-        min-height: 100%;
-        flex: 1;
+        display: grid;
+        grid-template-areas: "column-left column-right";
+        grid-template-columns: 1fr 1fr;
+        background-color: whitesmoke;
+        grid-area: main;       
     }
 
-    .flex-column {
-        width: 50%;
-        margin: 0 1%;
+    .column-right  {
+        height: 100%;
+        grid-area: column-right;
+        margin: 0 28% 0 1%;
+        background-color: aquamarine;
+    }
+
+    .column-left  {
+        height: 100%;
+        margin: 0 1% 0 28%;
+        grid-area: column-left;
         background-color: aquamarine;
     }
 
     footer {
-        text-align: center;
         background-color: gray;
-        justify-content: center;
-        flex: 0 0 auto;
+        grid-area: footer;
     }
     </style>
 </head>
 <body>
-    <div class="flex-container">
+    <div class="grid-container">
         <header>
             <h1>ACT - should</h1>
-            <p>Сделайте двухколоночный макет на flex с шапкой и подвалом,
+            <p>Сделайте двухколоночный макет на grid с шапкой и подвалом,
                 прилепленным к нижней границе экрана. Футер и шапка занимают всю
                 ширину экрана, а колонки только 70% ширины, с равными отступами по
                 бокам </p>
         </header>
         <main>
-            <div class="flex-column">
+            <div class="column-left">
                 <h2>Заголовок левой колонки</h2>
                 <p>Контент левой колонки</p>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
-            <div class="flex-column">
+            <div class="column-right">
                 <h2>Заголовок правой колонки</h2>
                 <p>Контент правой колонки</p>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
