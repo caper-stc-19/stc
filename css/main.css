@@ -206,10 +206,10 @@ header {
     min-height: 100vh;
     padding-top: 3.375rem;
     position: relative;
-    overflow: hidden;
     min-width: 81.25rem;
+    margin-bottom: 15.625rem;
 }
-
+/*
 header:after {
     min-width: 81.25rem;
     content: '';
@@ -222,7 +222,7 @@ header:after {
     transform: skewY(-5deg);
     z-index: 1;
 }
-
+*/
 .header-nav {
     float: right;   
     margin-bottom: 10.1875rem;
@@ -291,10 +291,12 @@ nav {
     text-decoration-color: black;
     margin: 0 0 0.125rem auto;
     text-align: left;
+    left: 50%;
+    bottom: -32%;
     max-width: 31.875rem;
     box-shadow: 0 0 0.125rem 0 gray;
     background: white;
-    position: relative;
+    position: absolute;
     color: black;
     z-index: 100;
     padding: 2.1875rem 0 0 1.875rem;    
