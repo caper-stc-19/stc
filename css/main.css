@@ -193,7 +193,7 @@ body {
 
 /** Сетка макета */
 .content {
-    max-width: 64.25rem;
+    max-width: 64.375rem;
     margin: auto;
 }
 
@@ -207,9 +207,11 @@ header {
     padding-top: 3.375rem;
     position: relative;
     overflow: hidden;
+    min-width: 81.25rem;
 }
 
 header:after {
+    min-width: 81.25rem;
     content: '';
     width: 100%;
     height: 50%;
@@ -263,6 +265,7 @@ nav {
 
 .header-nav__geo {
     font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     float: right;
     padding-top: 0.9375rem;
 }
@@ -314,6 +317,7 @@ nav {
 }
 
 .advantage {
+    min-width: 81.25rem;
     margin: -4.6875rem 0 8rem;
     width: 100%;
     position: relative;
@@ -359,6 +363,7 @@ nav {
 }
 
 .event-table {
+    min-width: 81.25rem;
     display: table;
     align-self: center;
     text-align: center;
@@ -448,7 +453,8 @@ nav {
     margin: 0 auto 6.25rem;
 }
 
-.gift {    
+.gift {
+    min-width: 81.25rem;
     background-image: url('/images/b4_bg.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -461,6 +467,7 @@ nav {
 }
 
 .gift:before {
+    min-width: 81.25rem;
     content: '';
     width: 100%;
     height: 50%;
@@ -473,6 +480,7 @@ nav {
 }
 
 .gift:after {
+    min-width: 81.25rem;
     content: '';
     width: 100%;
     height: 50%;
@@ -536,6 +544,7 @@ nav {
 }
 
 .movie-list {
+    min-width: 81.25rem;
     margin-bottom: 5.9375rem;
 }
 
@@ -544,11 +553,7 @@ nav {
     text-decoration: none;
     color: white;
     margin-bottom: 2.5rem;
-    display: grid;    
-    grid-template-areas:
-    "movie-list__cell movie-list__cell movie-list__cell"
-    "movie-list__cell movie-list__cell movie-list__cell"
-    "movie-list__cell movie-list__cell movie-list__cell";
+    display: flex;
 }
 
 .movie-list__cell {
@@ -633,6 +638,7 @@ nav {
 }
 
 .map {
+    min-width: 81.25rem;
     background-image: url('/images/map.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -645,6 +651,7 @@ nav {
 }
 
 footer {
+    min-width: 81.25rem;
     background-color: #90d23d;
     color: white;
     font-size: 1.125rem;
