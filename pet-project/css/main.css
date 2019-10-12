@@ -1,0 +1,117 @@
+/** Шрифты */
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.eot');
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Light.eot');
+    src: local('Roboto Light'), local('Roboto-Light'),
+        url('../fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Roboto-Light.woff') format('woff'),
+        url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/** Общие стили */
+
+html {
+    font-size: 16px;
+}
+
+/** все вложенные элементы наследуют от родителя,
+    если ни у одного родителя box-sizing не был изменен
+    возьмется из html
+*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto';
+    -webkit-text-size-adjust: 100%
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 16px;
+}
+/** Сетка макета */
+.content-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1366px;
+}
+
+header {
+    display: flex;
+}
+
+.header__content {
+    font-size: 18px;
+}
+
+.header_wrapper {
+    margin: 55px 54px 128px 54px; 
+}
+
+.hamburger-menu {
+    margin-bottom: 74px;
+}
+
+.menu {
+    display: none;
+}
+
+.header-titile-top {
+    letter-spacing: 1px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 17px;
+}
+
+.header-titile-middle {
+    letter-spacing: 1px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 17px;
+}
+
+.header-titile-bottom {
+    letter-spacing: 1px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 64px;
+}
+
+.header__p {
+    font-size: 18px;
+}
