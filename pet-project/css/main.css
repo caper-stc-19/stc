@@ -80,7 +80,7 @@ header {
 }
 
 .header_wrapper {
-    margin: 55px 54px 128px 54px; 
+    margin: 55px 50px 128px 54px; 
 }
 
 .hamburger-menu {
@@ -109,9 +109,11 @@ header {
     letter-spacing: 1px;
     font-weight: normal;
     display: block;
-    margin-bottom: 64px;
+    margin-bottom: 55px;
 }
 
 .header__p {
-    font-size: 18px;
+    font-size: 19px;
+    line-height: 28px;
+    margin-bottom: 30px;
 }
