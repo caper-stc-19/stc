@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex wrap/nowrap</title>
+    <style>
+        html {
+            font-size: 1.17vw;
+        }
+        .wrapper {
+            width: 62.5rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .flex-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid red;
+
+        }
+
+        .flex-nowrap {
+            display: flex;
+            flex-wrap: nowrap;
+            border: 1px solid green
+        }
+
+        .item-fixed {
+            min-width: 15.625rem;
+            min-height: 15.625rem;
+            border: 1px solid blue;
+        }
+
+        .item-not-fixed {
+            width: 15.625rem;
+            height: 15.625rem;
+            border: 1px solid aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="flex-wrap">
+            <div class="item-fixed"></div>
+            <div class="item-fixed"></div>
+            <div class="item-fixed"></div>
+            <div class="item-fixed"></div>
+        </div>
+        <div class="flex-nowrap">
+            <div class="item-fixed"></div>
+            <div class="item-fixed"></div>
+            <div class="item-fixed"></div>
+            <div class="item-fixed"></div>
+        </div>
+        <div class="flex-nowrap">
+            <div class="item-not-fixed"></div>
+            <div class="item-not-fixed"></div>
+            <div class="item-not-fixed"></div>
+            <div class="item-not-fixed"></div>
+        </div>
+        <div class="flex-nowrap">
+                <div class="item-not-fixed"></div>
+                <div class="item-not-fixed"></div>
+                <div class="item-not-fixed"></div>
+                <div class="item-not-fixed"></div>
+        </div>
+    </div>
+</body>
+</html>
