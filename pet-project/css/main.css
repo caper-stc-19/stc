@@ -66,6 +66,11 @@ h2 {
 p {
     font-size: 15px;
 }
+
+a {
+    text-decoration: none;
+}
+
 /** Сетка макета */
 .content-wrapper {
     margin-right: auto;
@@ -150,16 +155,24 @@ main {
     margin-bottom: 86px;
 }
 
-.main__p:last-child {
+.main__left-content > .main__p:last-child {
     margin-bottom: 60px;
 }
+
 .h-span {
     font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .main__right-wrapper {
     display: flex;
     flex-direction: column;
+}
+
+.main__right-content {
+    padding: 75px 125px 0 55px;
+    letter-spacing: 1px;
+    line-height: 28px;   
 }
 
 .main__right-top {    
@@ -173,5 +186,25 @@ main {
     background-image: url('/img/bg-middle-right-bottom.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
+    color: white;
+}
+
+.main__right-content > .main__p {
+    margin-bottom: 48px;
+}
+
+.btn-more {
+    display: inline-flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0 0 70px 0;
+    padding: 10px 38px;
+    color: black;
+}
+
+.main__right-bottom .btn-more {
+    border: 1px solid white;    
+    padding: 10px 42px;
+    color: white;
 }
