@@ -55,14 +55,16 @@ body {
 
 h1 {
     font-size: 40px;
+    font-weight: 300;
 }
 
 h2 {
     font-size: 45px;
+    font-weight: 300;
 }
 
 p {
-    font-size: 16px;
+    font-size: 15px;
 }
 /** Сетка макета */
 .content-wrapper {
@@ -80,7 +82,7 @@ header {
 }
 
 .header_wrapper {
-    margin: 55px 50px 128px 54px; 
+    margin: 55px 50px 0 54px; 
 }
 
 .hamburger-menu {
@@ -93,7 +95,6 @@ header {
 
 .header-titile-top {
     letter-spacing: 1px;
-    font-weight: 300;
     display: block;
     margin-bottom: 17px;
 }
@@ -116,4 +117,61 @@ header {
     font-size: 19px;
     line-height: 28px;
     margin-bottom: 30px;
+}
+
+main {
+    display: flex;
+}
+
+.main__left {
+    background-image: url('/img/bg-middle-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__left-wrapper {
+    width: 614px;
+}
+
+.main__left-content {
+    padding: 72px 60px 0 61px;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: normal;
+    line-height: 28px;
+}
+
+.main__h2 {
+    margin-bottom: 43px;
+}
+
+.main__p {
+    margin-bottom: 86px;
+}
+
+.main__p:last-child {
+    margin-bottom: 60px;
+}
+.h-span {
+    font-weight: bold;
+}
+
+.main__right-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.main__right-top {    
+    background-image: url('/img/bg-middle-right-top.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main__right-bottom {    
+    background-image: url('/img/bg-middle-right-bottom.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
