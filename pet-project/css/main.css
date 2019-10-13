@@ -63,6 +63,12 @@ h2 {
     font-weight: 300;
 }
 
+h3 {
+    font-size: 43px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 p {
     font-size: 15px;
 }
@@ -207,4 +213,55 @@ main {
     border: 1px solid white;    
     padding: 10px 42px;
     color: white;
+}
+
+footer {
+    display: flex;
+}
+
+.footer__left-content {
+    padding: 60px 60px 20px 48px;
+    margin-bottom: 55px;
+    color: white;
+}
+
+.footer__left {
+    background-image: url('/img/bg-bottom-left.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 458px;
+}
+
+.footer__right {    
+    background-image: url('/img/bg-bottom-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    flex-basis: 908px;
+}
+
+.footer__left-title {
+    margin-bottom: 250px;
+    letter-spacing: 1px;
+    line-height: 65px;
+}
+
+.footer__h3 {
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer__p {
+    font-size: 17px;
+}
+
+.credits {
+    padding-left: 10px;
+}
+
+.logo {
+    margin-bottom: 30px;
 }
