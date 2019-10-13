@@ -69,12 +69,53 @@ h3 {
     letter-spacing: 1px;
 }
 
+h4 {
+    font-size: 45px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
 p {
     font-size: 15px;
 }
 
 a {
     text-decoration: none;
+}
+
+input, textarea, button
+{
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 304px;
+    height: 55px;
+    margin: 0 10px 15px 0;
+    padding-left: 30px;
+    color: white;    
+}
+
+textarea {
+    width: 618px;
+    height: 160px;
+    padding-top: 20px;
+}
+
+::placeholder {
+    color: white;
+}
+
+label {
+    display: none;
+}
+
+button {
+    width: 618px;
+    transition: .2s;
+}
+
+button:hover {
+    background-color: rgba(165, 165, 165, 0.3);
 }
 
 /** Сетка макета */
@@ -220,26 +261,17 @@ footer {
 }
 
 .footer__left-content {
-    padding: 60px 60px 20px 48px;
+    padding: 60px 60px 18px 48px;
     margin-bottom: 55px;
     color: white;
 }
 
-.footer__left {
+.footer__left-bg {
     background-image: url('/img/bg-bottom-left.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     flex-basis: 458px;
-}
-
-.footer__right {    
-    background-image: url('/img/bg-bottom-right.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    flex-basis: 908px;
 }
 
 .footer__left-title {
@@ -264,4 +296,61 @@ footer {
 
 .logo {
     margin-bottom: 30px;
+}
+
+.footer__right-bg {    
+    background-image: url('/img/bg-bottom-right.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    flex-basis: 908px;
+}
+
+.footer__right-content {
+    padding: 70px 60px 20px 55px;
+}
+
+.footer__h4 {
+    margin-bottom: 53px;
+}
+
+.form-container {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.flex-outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    width: 640px;
+}
+
+.footer__call-to-action {
+    margin-bottom: 31px;
+    letter-spacing: 0.3px;
+}
+
+.footer__social {
+    margin-bottom: 57px;
+}
+
+.footer__social-link {
+    border-radius: 7px;
+    padding: 11px 10px;
+}
+
+.fb {
+    background-color: #345bb4;
+    padding: 12px 15px;
+}
+
+.dribble {
+    background-color: #e64895;
+    margin: 0 3px 0 3px;
+}
+
+.twitter {
+    background-color: #00b4ff;
 }
