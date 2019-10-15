@@ -187,7 +187,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Roboto';
-    min-width: 20rem;
+    min-width: 320px;
     -webkit-text-size-adjust: 100%
 }
 
@@ -196,6 +196,7 @@ body {
     max-width: 64.375rem;
     margin: auto;
 }
+
 
 header {    
     background-image: url('/images/top_bg.jpg');
@@ -206,10 +207,10 @@ header {
     min-height: 100vh;
     padding-top: 3.375rem;
     position: relative;
+    overflow: hidden;
     min-width: 81.25rem;
-    margin-bottom: 15.625rem;
 }
-/*
+
 header:after {
     min-width: 81.25rem;
     content: '';
@@ -222,7 +223,11 @@ header:after {
     transform: skewY(-5deg);
     z-index: 1;
 }
-*/
+
+.header__menu-wrap {
+    float: left;
+}
+
 .header-nav {
     float: right;   
     margin-bottom: 10.1875rem;
@@ -291,12 +296,10 @@ nav {
     text-decoration-color: black;
     margin: 0 0 0.125rem auto;
     text-align: left;
-    left: 50%;
-    bottom: -18.75rem;
     max-width: 31.875rem;
     box-shadow: 0 0 0.125rem 0 gray;
     background: white;
-    position: absolute;
+    position: relative;
     color: black;
     z-index: 100;
     padding: 2.1875rem 0 0 1.875rem;    
@@ -574,7 +577,7 @@ nav {
     bottom: -100%;
     box-sizing: border-box;
     border-radius: 0.625rem;
-    padding: 1.25rem 0rem 0rem 1.5625rem;
+    padding: 1.25rem 0 0 1.5625rem;
     transition: .2s;
     display: flex;
     flex-direction: column;
