@@ -195,6 +195,7 @@ body {
 .content {
     max-width: 64.375rem;
     margin: auto;
+    border: 1px solid red;
 }
 
 header {
@@ -226,6 +227,7 @@ nav {
 
 .menu {
     list-style-type: none;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     display: flex;
@@ -238,7 +240,7 @@ nav {
 .menu__link,
 .menu__link:visited,
 .menu__link:active {
-    margin-right: 2.5rem;
+    padding: 0 0.625rem;
     cursor: pointer;
     text-decoration: none;
     color: white;
@@ -318,6 +320,8 @@ nav {
     font-size: 3.125rem;
     font-weight: 700;
     padding-bottom: 7.625rem;
+    z-index: 100;
+    color: black;
 }
 
 .advantage__title {
@@ -544,25 +548,25 @@ nav {
     color: white;
     margin-bottom: 2.5rem;
     display: flex;
+    align-content: center;
+    border: 1px solid black;
 }
 
 .movie-list__cell {
     overflow: hidden;
     position: relative;
     width: 21.25rem;
-    padding: 0 1.875rem;
+    border: 1px solid blue;
 }
 
 .movie-list__description {
     position: absolute;
     background-color: rgba(153, 204, 50, 0.8);
-    right: 0.75rem;
-    left: 1.875rem;
+    width: 300px;
     height: 100%;
     bottom: -100%;
     box-sizing: border-box;
     border-radius: 0.625rem;
-    padding: 1.25rem 0rem 0rem 1.5625rem;
     transition: .2s;
     display: flex;
     flex-direction: column;
