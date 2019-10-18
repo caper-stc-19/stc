@@ -556,6 +556,7 @@ nav {
     color: white;
     margin-bottom: 2.5rem;
     display: flex;
+    justify-content: space-evenly;
 }
 
 .movie-list__cell {
@@ -680,4 +681,20 @@ footer {
 
 .footer__social-link:hover {
     box-shadow: 0 0 0 0 #90d23d;
+}
+
+.owl-nav {
+    position: relative;
+    top: -158px;
+    color: black;
+}
+
+.owl-prev {
+    position: absolute;
+    left: -30px;
+}
+
+.owl-next {
+    position: absolute;
+    right: -30px;
 }
