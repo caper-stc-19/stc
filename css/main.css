@@ -228,10 +228,12 @@ header:after {
     display: flex;
     justify-content: space-between;
     margin-bottom: 10.1875rem;
+    border: 1px solid red;
 }
 
 .header-nav__logo {
    margin-right: 0;
+   border: 1px solid white;
 }
 
 nav {
@@ -244,10 +246,11 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
+    border: 1px solid white;
 }
 
 .menu__item {
-
+    border: 1px solid white;
 }
 
 .menu__link,
@@ -270,6 +273,7 @@ nav {
     font-weight: 100;
     float: right;
     padding-top: 0.9375rem;
+    border: 1px solid white;
 
 }
 
