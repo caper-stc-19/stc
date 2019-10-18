@@ -1,4 +1,35 @@
-@media (max-width: 1024px) 
+@media (max-width: 850px) {
+    html {
+        font-size: 1.76vw;
+    }
+
+
+    body {
+        max-width: 1920px;
+        min-width: 320px;
+        box-sizing: border-box;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    header {
+        background-color: #242424;
+        background: url(../images/top_bg.jpg) no-repeat top center;
+        background-size: cover;
+        height: calc(100vh + 10.5rem);
+        padding-top: 2.5rem;
+        margin-bottom: 3.9rem;
+        position: relative;
+    }
+
+    .content {
+        width: 51.5rem;
+        height: inherit;
+        margin: 0 auto;
+    }
+}
+
+/*@media (max-width: 1024px) 
 {
 
     .logo {
@@ -118,4 +149,4 @@
     .content {
         width: 63.4rem;
     }
-}
+}*/

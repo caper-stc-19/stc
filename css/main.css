@@ -173,6 +173,7 @@ a {
 
 html {
     font-size: 1.17vw;
+    border: 1px solid red;
 }
 
 /** все вложенные элементы наследуют от родителя,
@@ -187,7 +188,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Roboto';
-    min-width: 20rem;
     -webkit-text-size-adjust: 100%
 }
 
@@ -195,9 +195,10 @@ body {
 .content {
     max-width: 64.375rem;
     margin: auto;
+    border: 1px solid red;
 }
 
-header {    
+header {
     background-image: url('/images/top_bg.jpg');
     background-position: top center;
     background-repeat: no-repeat;
@@ -208,10 +209,10 @@ header {
     position: relative;
     min-width: 81.25rem;
     margin-bottom: 15.625rem;
+    border: 1px solid blue;
 }
-/*
+
 header:after {
-    min-width: 81.25rem;
     content: '';
     width: 100%;
     height: 50%;
@@ -222,36 +223,37 @@ header:after {
     transform: skewY(-5deg);
     z-index: 1;
 }
-*/
+
 .header-nav {
-    float: right;   
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 10.1875rem;
 }
 
 .header-nav__logo {
-   float: left;
-   margin-right: 7.5rem;
+   margin-right: 0;
 }
 
 nav {
-    float: left;
     padding-top: 0.9375rem;
 }
 
 .menu {
     list-style-type: none;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .menu__item {
-    float: left;
+
 }
 
 .menu__link,
 .menu__link:visited,
 .menu__link:active {
-    margin-right: 2.5rem;
+    padding: 0 0.625rem;
     cursor: pointer;
     text-decoration: none;
     color: white;
@@ -268,6 +270,7 @@ nav {
     font-weight: 100;
     float: right;
     padding-top: 0.9375rem;
+
 }
 
 .call-to-action {
@@ -330,6 +333,8 @@ nav {
     font-size: 3.125rem;
     font-weight: 700;
     padding-bottom: 7.625rem;
+    z-index: 100;
+    color: black;
 }
 
 .advantage__title {
@@ -410,19 +415,11 @@ nav {
     text-align: left;
 }
 
-.event-table__row {
-    display: table-row;
-    font-size: 1.375rem;
-    font-weight: 400;
-    width: 11.25rem;
-    height: 4.75rem;
-    text-align: left;
-}
-
 .event-table__cell {
     display: table-cell;
     padding-top: 1.5625rem;
     padding-bottom: 1.25rem;
+    padding: 1.5625rem 0 1.25rem;
     width: 21.875rem;
     color: white;
 }
@@ -503,15 +500,15 @@ nav {
 }
 
 .gift__row {
-   width: 64.375rem;
-   font-size: 0rem;
-   text-align: right;
-   position: relative;
-   z-index: 100;
+    display: flex;
+    width: 64.375rem;
+    font-size: 0rem;
+    text-align: right;
+    position: relative;
+    z-index: 100;
 }
 
 .gift__column {
-    display: inline-block;
     vertical-align: top;
     margin-right: 2.5rem;
 }
@@ -564,26 +561,25 @@ nav {
     color: white;
     margin-bottom: 2.5rem;
     display: flex;
-    justify-content: space-evenly;
+    align-content: center;
+    border: 1px solid black;
 }
 
 .movie-list__cell {
     overflow: hidden;
     position: relative;
     width: 21.25rem;
-    padding: 0 1.875rem;
+    border: 1px solid blue;
 }
 
 .movie-list__description {
     position: absolute;
     background-color: rgba(153, 204, 50, 0.8);
-    right: 0.75rem;
-    left: 1.875rem;
+    width: 300px;
     height: 100%;
     bottom: -100%;
     box-sizing: border-box;
     border-radius: 0.625rem;
-    padding: 1.25rem 0rem 0rem 1.5625rem;
     transition: .2s;
     display: flex;
     flex-direction: column;
@@ -689,20 +685,4 @@ footer {
 
 .footer__social-link:hover {
     box-shadow: 0 0 0 0 #90d23d;
-}
-
-.owl-nav {
-    position: relative;
-    top: -158px;
-    color: black;
-}
-
-.owl-prev {
-    position: absolute;
-    left: -30px;
-}
-
-.owl-next {
-    position: absolute;
-    right: -30px;
 }
