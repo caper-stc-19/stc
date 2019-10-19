@@ -173,7 +173,6 @@ a {
 
 html {
     font-size: 1.17vw;
-    border: 1px solid red;
 }
 
 /** все вложенные элементы наследуют от родителя,
@@ -185,31 +184,25 @@ html {
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
     font-family: 'Roboto';
-    -webkit-text-size-adjust: 100%
+    min-width: 320px;
+    -webkit-text-size-adjust: 100%;
 }
 
 /** Сетка макета */
 .content {
-    max-width: 64.375rem;
-    margin: auto;
-    border: 1px solid red;
+    max-width: 64.2rem;
+    margin: 0 auto;
 }
 
 header {
-    background-image: url('/images/top_bg.jpg');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+    background: url('/images/top_bg.png') no-repeat top center / cover;
     min-height: 100vh;
     padding-top: 3.375rem;
     position: relative;
     min-width: 81.25rem;
     margin-bottom: 15.625rem;
-    border: 1px solid blue;
+    color: white;
 }
 
 header:after {
@@ -227,13 +220,18 @@ header:after {
 .header-nav {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 10.1875rem;
-    border: 1px solid red;
 }
 
 .header-nav__logo {
    margin-right: 0;
-   border: 1px solid white;
+}
+
+.logo, .logo:visited,
+.logo:active {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 nav {
@@ -246,11 +244,9 @@ nav {
     margin: 0;
     padding: 0;
     display: flex;
-    border: 1px solid white;
 }
 
 .menu__item {
-    border: 1px solid white;
 }
 
 .menu__link,
@@ -273,8 +269,6 @@ nav {
     font-weight: 100;
     float: right;
     padding-top: 0.9375rem;
-    border: 1px solid white;
-
 }
 
 .call-to-action {
@@ -298,8 +292,8 @@ nav {
     text-decoration-color: black;
     margin: 0 0 0.125rem auto;
     text-align: left;
-    left: 50%;
-    bottom: -18.75rem;
+    left: 50.2%;
+    bottom: -16.35rem;
     max-width: 31.875rem;
     box-shadow: 0 0 0.125rem 0 gray;
     background: white;
