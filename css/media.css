@@ -10,6 +10,11 @@
     header {
         padding-top: 3.075rem;
     }
+
+    .greeting {
+        left: 40%;
+    }
+
 } 
 
 
@@ -17,7 +22,7 @@
 {
 
     html {
-        font-size: 1.67vw;
+        font-size: 1.47vw;
     }
 
     .content {
@@ -37,18 +42,14 @@
         transform: scale(0.9);
     }
 
-    .greeting {
-        left: 32%;
-        bottom: -18.25rem;
-    }     
 
 }
 
-@media (max-width: 768px) 
+@media (max-width: 850px) 
 {
 
-    .html {
-        font-size: 2.97vw;
+    html {
+        font-size: 1.7vw;
     }
 
     .advantage__image {
@@ -56,11 +57,11 @@
     }
 
     .content {
-        max-width: 57.98rem;
+        max-width: 56.58rem;
     }
 
     header {
-        min-width: 57.58rem;
+        min-width: 56.58rem;
     }
 
 }
@@ -86,7 +87,15 @@
         display: block;
         position: absolute;
     }
+    .content {
+        max-width: 48.68rem;
+    }
 
+    header {
+        min-height: 80%;
+        min-width: 49.68rem;
+    }
+    
     .header__menu-burger {
         position: relative;
         width: 1.25rem;
@@ -120,22 +129,20 @@
         display: none;
     }
 
+    .advantage {
+        max-width: 56.7rem;
+    }
+
     .advantage__row {
         flex-direction: row-reverse;
-    }   
+    }
 
-}
-
-@media (max-width: 480px) 
-{
     .greeting {
-        position: relative;
-        left: 0;
-        bottom: 0;
-        max-width: 23.675rem;
+        left: 35%;
     }
 
 }
+
 
 /*
     body {

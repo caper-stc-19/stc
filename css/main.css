@@ -201,7 +201,6 @@ header {
     padding-top: 3.375rem;
     position: relative;
     min-width: 81.25rem;
-    margin-bottom: 15.625rem;
     color: white;
 }
 
@@ -290,14 +289,12 @@ nav {
 
 .greeting {
     text-decoration-color: black;
-    margin: 0 0 0.125rem auto;
     text-align: left;
-    left: 50.2%;
-    bottom: -16.35rem;
+    left: 50%;
     max-width: 31.875rem;
     box-shadow: 0 0 0.125rem 0 gray;
     background: white;
-    position: absolute;
+    position: relative;
     color: black;
     z-index: 100;
     padding: 2.1875rem 0 0 1.875rem;    
@@ -320,7 +317,6 @@ nav {
 }
 
 .advantage {
-    min-width: 81.25rem;
     margin: -4.6875rem 0 8rem;
     width: 100%;
     position: relative;
