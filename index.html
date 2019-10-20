@@ -8,9 +8,11 @@
     <meta name="author" content="">
     <title>Заказ билетов в кинотеатр Иннополис</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <link rel="stylesheet"  type="text/css" href="css/reset.css" />
-    <link rel="stylesheet"  type="text/css" href="css/main.css" />
+    <link rel="stylesheet"  type="text/css" href="css/reset.css" />    
     <link rel="stylesheet"  type="text/css" href="css/media.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css" />
+    <link rel="stylesheet"  type="text/css" href="css/main.css" />
 </head>
 
 <body>
@@ -28,15 +30,15 @@
                         <span class="header__menu-burger-span"></span>
                     </div>               
 
-                <nav>
-                    <ul class="menu">
-                        <li class="menu__item"><a class="menu__link" href="#">ЗАКАЗАТЬ БИЛЕТ</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">ПРЕИМУЩЕСТВА</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">ФИЛЬМЫ</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">КОНТАКТЫ</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    <nav>
+                        <ul class="menu">
+                            <li class="menu__item"><a class="menu__link" href="#">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">ПРЕИМУЩЕСТВА</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">ФИЛЬМЫ</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="header-nav__geo">
                         Ваш город: <span class="header-nav__city">Москва</span>
                 </div>
@@ -55,6 +57,7 @@
             </div>
         </div>
     </header>
+
     <div class="advantage">
         <div class="content">
             <h3 class="advantage__head-title">Почему мы?</h3>
@@ -84,5 +87,366 @@
             </div>
         </div>
     </div>
+
+    <div class="event-table">
+        <div class="content">
+            <h2 class="event-table__title">Выберите фильм</h2>
+            <div class="event-table__head">                    
+                <ul class="event-table__row">
+                    <li class="event-table__cell">Time</li>
+                    <li class="event-table__cell">Stuff that will happen</li>
+                </ul>
+                </div>
+            <div class="event-table__body">
+                <ul class="event-table__row">
+                        <li class="event-table__cell"><span id="start-film-1">10am - 12pm</span></li>
+                        <li class="event-table__cell"><span id="title-film-1">Movie title</span></li>
+                        <li class="event-table__cell"><span id="genre-film-1">Texts about movie</span></li>
+                        <li class="event-table__cell-more"></li>
+                </ul>
+                <ul class="event-table__row">
+                        <li class="event-table__cell"><span id="start-film-2">12pm - 02pm</span></li>
+                        <li class="event-table__cell"><span id="title-film-2">Movie title</span></li>
+                        <li class="event-table__cell"><span id="genre-film-2">Texts about movie</span></li>
+                        <li class="event-table__cell-more"></li>
+                </ul>
+                <ul class="event-table__row">
+                        <li class="event-table__cell"><span id="start-film-3">02pm - 03pm</span></li>
+                        <li class="event-table__cell"><span id="title-film-3">Movie title</span></li>
+                        <li class="event-table__cell"><span id="genre-film-3">Texts about movie</span></li>
+                        <li class="event-table__cell-more"></li>
+                </ul>
+                <ul class="event-table__row">
+                        <li class="event-table__cell"><span id="start-film-4">03pm - 05pm</span></li>
+                        <li class="event-table__cell"><span id="title-film-4">Movie title</span></li>
+                        <li class="event-table__cell"><span id="genre-film-4">Texts about movie</span></li>
+                        <li class="event-table__cell-more"></li>
+                </ul>
+            </div>
+            <div class="event-table__bottom-radius">
+                <li class="event-table__cell"></li>            
+            </div>
+            <div class="event-table__foter">
+                <p>Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)</p>
+            </div>        
+        </div>
+    </div>
+    
+    <div class="gift">
+        <div class="content">
+            <div class="gift__row">
+                <div class="gift__column">
+                    <img class="gift__img" src="images/b4_img.jpg" alt="Подарок каждому" />
+                </div>
+                <div class="gift__column">
+                    <div class="gift__text">
+                        <h3 class="gift__title">Подарок каждому!</h3>
+                        <p class="gift__p">Are you an Elite author in the Envato Marketplaces? If so we are proud of you! We want to give our thanks in achieving great success in the marketplace and we want to make known to the people of our country that you are amazing! Our Elite gifting program includes giving you special merchandize from our community and also promote your works in our community.</p>
+                        <p class="gift__p">All you have to do is contact us by clicking the button here and then its just going to the event, saying something motivational and taking that swag while looking amazing infront of thousands of other community members.</p>        
+                        <p class="gift__p">*Be advised, we will only give you Elite thank you swag for each level of elite you cross. That means if you do not cross to the next elite level before the next event, you cannot claim your prizes.</p>
+                        
+                        <button type="submit" class="gift__button">Получить подарок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-list">
+        <div class="content">
+            <div class="movie-list__head">
+                <h2 class="movie-list__head-title">Фильмы</h2>
+                <p class="movie-list__head-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipiscialias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esseex inventore repudiandae, suscipit!</p>
+            </div>
+            <div class="movie-list__row owl-carousel">
+                    <div class="movie-list__cell">
+                        <div class="movie-list__poster">
+                            <img src="images/mov1.jpg" alt="Человек-паук" />
+                        </div>
+                        <div class="movie-list__description">
+                            <a class="movie-list__title" href="https://www.kinopoisk.ru/film/82441/"  target="_blank" title="Описание фильма Человек-паук на kinopoisk.ru Университет Иннополис">Человек-паук</a><br>
+                            <p class="movie-list__hr"></p>
+                            <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="movie-list__social">
+                                <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                    <img src="images/twitter.svg" alt="twitter" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                    <img src="images/facebook.svg" alt="facebook" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                    <img src="images/dribbble.svg" alt="dribbble" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                    <img src="images/behance.svg" alt="behance" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="movie-list__cell">
+                    <div class="movie-list__poster">
+                        <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
+                    </div>
+                    <div class="movie-list__description">
+                        <a class="movie-list__title" href="https://www.kinopoisk.ru/film/1122114/"  target="_blank" title="Описание фильма Собачья жизнь 2 на kinopoisk.ru Университет Иннополис">Собачья жизнь 2</a><br>
+                        <p class="movie-list__hr"></p>
+                        <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                        <div class="movie-list__social">
+                            <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                <img src="images/twitter.svg" alt="twitter" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                <img src="images/facebook.svg" alt="facebook" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                <img src="images/dribbble.svg" alt="dribbble" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                <img src="images/behance.svg" alt="behance" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-list__cell">
+                    <div class="movie-list__poster">
+                        <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
+                    </div>
+                    <div class="movie-list__description">
+                        <a class="movie-list__title" href="https://www.kinopoisk.ru/film/693730/"  target="_blank" title="Описание фильма Люди в черном: Интернэшнл на kinopoisk.ru Университет Иннополис">Люди в черном: Интернэшнл</a><br>
+                        <p class="movie-list__hr"></p>
+                        <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                        <div class="movie-list__social">
+                            <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                <img src="images/twitter.svg" alt="twitter" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                <img src="images/facebook.svg" alt="facebook" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                <img src="images/dribbble.svg" alt="dribbble" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                <img src="images/behance.svg" alt="behance" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="movie-list__cell">
+                        <div class="movie-list__poster">
+                            <img src="images/mov1.jpg" alt="Человек-паук" />
+                        </div>
+                        <div class="movie-list__description">
+                            <a class="movie-list__title" href="https://www.kinopoisk.ru/film/82441/"  target="_blank" title="Описание фильма Человек-паук на kinopoisk.ru Университет Иннополис">Человек-паук</a><br>
+                            <p class="movie-list__hr"></p>
+                            <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="movie-list__social">
+                                <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                    <img src="images/twitter.svg" alt="twitter" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                    <img src="images/facebook.svg" alt="facebook" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                    <img src="images/dribbble.svg" alt="dribbble" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                    <img src="images/behance.svg" alt="behance" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="movie-list__cell">
+                    <div class="movie-list__poster">
+                        <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
+                    </div>
+                    <div class="movie-list__description">
+                        <a class="movie-list__title" href="https://www.kinopoisk.ru/film/1122114/"  target="_blank" title="Описание фильма Собачья жизнь 2 на kinopoisk.ru Университет Иннополис">Собачья жизнь 2</a><br>
+                        <p class="movie-list__hr"></p>
+                        <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                        <div class="movie-list__social">
+                            <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                <img src="images/twitter.svg" alt="twitter" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                <img src="images/facebook.svg" alt="facebook" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                <img src="images/dribbble.svg" alt="dribbble" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                <img src="images/behance.svg" alt="behance" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-list__cell">
+                    <div class="movie-list__poster">
+                        <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
+                    </div>
+                    <div class="movie-list__description">
+                        <a class="movie-list__title" href="https://www.kinopoisk.ru/film/693730/"  target="_blank" title="Описание фильма Люди в черном: Интернэшнл на kinopoisk.ru Университет Иннополис">Люди в черном: Интернэшнл</a><br>
+                        <p class="movie-list__hr"></p>
+                        <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                        <div class="movie-list__social">
+                            <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                <img src="images/twitter.svg" alt="twitter" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                <img src="images/facebook.svg" alt="facebook" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                <img src="images/dribbble.svg" alt="dribbble" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                <img src="images/behance.svg" alt="behance" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    <div class="movie-list__cell">
+                        <div class="movie-list__poster">
+                            <img src="images/mov1.jpg" alt="Человек-паук" />
+                        </div>
+                        <div class="movie-list__description">
+                            <a class="movie-list__title" href="https://www.kinopoisk.ru/film/82441/"  target="_blank" title="Описание фильма Человек-паук на kinopoisk.ru Университет Иннополис">Человек-паук</a><br>
+                            <p class="movie-list__hr"></p>
+                            <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                            <div class="movie-list__social">
+                                <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                    <img src="images/twitter.svg" alt="twitter" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                    <img src="images/facebook.svg" alt="facebook" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                    <img src="images/dribbble.svg" alt="dribbble" />
+                                </a>
+                                <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                    <img src="images/behance.svg" alt="behance" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <div class="movie-list__cell">
+                    <div class="movie-list__poster">
+                        <img src="images/mov2.jpg" alt="Собачья жизнь 2" />
+                    </div>
+                    <div class="movie-list__description">
+                        <a class="movie-list__title" href="https://www.kinopoisk.ru/film/1122114/"  target="_blank" title="Описание фильма Собачья жизнь 2 на kinopoisk.ru Университет Иннополис">Собачья жизнь 2</a><br>
+                        <p class="movie-list__hr"></p>
+                        <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                        <div class="movie-list__social">
+                            <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                <img src="images/twitter.svg" alt="twitter" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                <img src="images/facebook.svg" alt="facebook" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                <img src="images/dribbble.svg" alt="dribbble" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                <img src="images/behance.svg" alt="behance" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-list__cell">
+                    <div class="movie-list__poster">
+                        <img src="images/mov3.jpg" alt="Люди в черном: Интернэшнл" />
+                    </div>
+                    <div class="movie-list__description">
+                        <a class="movie-list__title" href="https://www.kinopoisk.ru/film/693730/"  target="_blank" title="Описание фильма Люди в черном: Интернэшнл на kinopoisk.ru Университет Иннополис">Люди в черном: Интернэшнл</a><br>
+                        <p class="movie-list__hr"></p>
+                        <p class="movie-list__text">Lorem ipsum dolor sit amet, consectetur</p>
+                        <div class="movie-list__social">
+                            <a class="movie-list__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                                <img src="images/twitter.svg" alt="twitter" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://fb.com" title="facebook" target="_blank">
+                                <img src="images/facebook.svg" alt="facebook" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://dribble.com" title="dribble" target="_blank">
+                                <img src="images/dribbble.svg" alt="dribbble" />
+                            </a>
+                            <a class="movie-list__social-link" href="http://behance.com" title="behance" target="_blank">
+                                <img src="images/behance.svg" alt="behance" />
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map"></div>
+
+    <footer>
+        <div class="footer__social">
+                <a class="footer__social-link" href="http://fb.com" title="facebook" target="_blank">
+                    <img class="footer__svg" src="images/facebook_big.svg" alt="facebook" />
+                </a>
+                <a class="footer__social-link" href="http://twitter.com" title="twitter" target="_blank">
+                    <img src="images/twitter_big.svg" alt="twitter" />
+                </a>
+                <a class="footer__social-link" href="http://linkedin.com" title="linkedin" target="_blank">
+                    <img src="images/linkedin_big.svg" alt="linkedin" />
+                </a>
+                <a class="footer__social-link" href="http://google-plus.com" title="google plus " target="_blank">
+                    <img src="images/google_plus_big.svg" alt="google plus " />
+                </a>
+                <a class="footer__social-link" href="http://tumblr.com" title="tumblr" target="_blank">
+                    <img src="images/tumblr_big.svg" alt="tumblr" />
+                </a>
+        </div>    
+        <p class="footer__text">Hope we see you at the event!<br>All Rights Reserved. Envato Bangladesh © 2015</p>
+    </footer>
+
+    <div class="form">
+        <form action="/order.php" method="get" id="order_form">
+            <label for="name">Имя:</label>
+            <input type="text" name="name" placeholder="Ваше имя" pattern="^[А-Яа-яЁё\s]+$" title="Только кириллица" required><br>
+            <label for="email">email</label>
+            <input type="email" name="email" placeholder="Ваш email" required><br>
+            <label for="place">Город:</label> <select name="place" required>
+                       <option value="Moscow">Москва</option>
+                       <option value="Rostov">Ростов</option>
+                       <option value="Krasnodar">Краснодар</option>
+                       <option value="Sochi">Сочи</option>
+                       <option value="Vladivostok">Владивосток</option>
+                       <option value="Astrahan">Астрахань</option>
+                       <option value="Anapa">Анапа</option>
+                       <option value="Voronezh">Воронеж</option>
+                       <option value="Innopolis">Иннополис</option>
+                       <option value="Other">Другой город</option>
+                    </select><br>
+            <textarea rows="3" cols="100">Комментарий:</textarea><br><br>
+            <input type = "checkbox" name="152-FZ" value="yes" required>
+            Настоящим я даю согласие на обработку персональных данных, в соответствии с требованиями статьи 9 Федерального закона от 27.07.2006 № 152-ФЗ «О персональных данных».<br><br>
+            <input type="file" name="file"><br><br>
+            <button type="submit" form="order_form">Заказать</button>
+        </form>        
+    </div>
+    <!-- javascript -->
+    <script type="text/javascript" src="js/film.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="owlcarousel/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:2
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:4
+                }
+            }
+        })
+    </script>
 </body>
 </html>

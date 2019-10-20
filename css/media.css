@@ -1,73 +1,65 @@
-@media (max-width: 1280px){
-    .logo {
-        transform: scale(0.9);
-    }
-
-    .content {
-        max-width: 69rem;
-    }
-
-    header {
-        padding-top: 3.075rem;
-    }
-
-    .greeting {
-        left: 40%;
-    }
-
-} 
-
-
 @media (max-width: 1024px) 
 {
 
-    html {
-        font-size: 1.47vw;
-    }
-
-    .content {
-        max-width: 54.04rem;
+    .movie-list__social {
+        display: none;
     }
 
     .logo {
         transform: scale(0.8);
     }
 
-    header {
-        min-width: 58.58rem;
-        padding-top: 3.075rem;
-    }
-
     .advantage__image {
         transform: scale(0.9);
     }
+     
 
-
-}
-
-@media (max-width: 850px) 
-{
-
-    html {
-        font-size: 1.7vw;
-    }
-
-    .advantage__image {
-        transform: scale(0.8);
-    }
-
-    .content {
-        max-width: 56.58rem;
+    body {
+        max-width: 1920px;
+        min-width: 320px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
     }
 
     header {
-        min-width: 56.58rem;
+        background-color: #242424;
+        background: url(../images/top_bg.jpg) no-repeat top center;
+        background-size: cover;
+        height: calc(100vh+10.5rem);
+        padding-top: 2.5rem;
+        margin-bottom: 15.625rem;
+        position: relative;
+    }    
+
+    .content {
+        width: 63.2rem;
+        height: inherit;
+        margin: 0 auto;        
     }
+
+    .movie-list__row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .movie-list__cell:last-of-type {
+        margin-top: 2.5rem;
+    }
+    
 
 }
 
-@media (max-width: 610px) 
+@media (max-width: 768px) 
 {
+ 
+    .html {
+        font-size: 1.76vw;
+    }
+
+    .logo {
+        transform: scale(0.6);
+    }
+
     .advantage__image {
         transform: scale(0.7);
     }
@@ -87,15 +79,7 @@
         display: block;
         position: absolute;
     }
-    .content {
-        max-width: 48.68rem;
-    }
 
-    header {
-        min-height: 80%;
-        min-width: 49.68rem;
-    }
-    
     .header__menu-burger {
         position: relative;
         width: 1.25rem;
@@ -129,51 +113,20 @@
         display: none;
     }
 
-    .advantage {
-        max-width: 56.7rem;
-    }
-
     .advantage__row {
         flex-direction: row-reverse;
     }
 
-    .greeting {
-        left: 35%;
+    .movie-list__text {
+        font-size: 18px;
     }
-
 }
 
-
-/*
-    body {
-        max-width: 1920px;
-        min-width: 320px;
-        box-sizing: border-box;
-        font-family: 'Roboto', sans-serif;
-    }
-
-    header {
-        background-color: #242424;
-        background: url(../images/top_bg.jpg) no-repeat top center;
-        background-size: cover;
-        height: calc(100vh+10.5rem);
-        padding-top: 2.5rem;
-        margin-bottom: 15.625rem;
-        position: relative;
-    }    
-
+@media (max-width: 425px) 
+{
     .content {
-        width: 63.2rem;
-        height: inherit;
-        margin: 0 auto;        
+        width: 63.4rem;
     }
 
-    .movie-list__row {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 
-    .movie-list__cell:last-of-type {
-        margin-top: 2.5rem;
-    }
-    */
+}
